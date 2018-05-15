@@ -5,9 +5,9 @@ import java.util.Date;
 public class Area {
     private Integer areaId;
     private String areaName;
-    private Integer priorty;
+    private Integer priority;
     private Date createTime;
-    private Date lastEditIime;
+    private Date lastEditTime;
 
     public Integer getAreaId() {
         return areaId;
@@ -25,12 +25,12 @@ public class Area {
         this.areaName = areaName;
     }
 
-    public Integer getPriorty() {
-        return priorty;
+    public Integer getPriority() {
+        return priority;
     }
 
-    public void setPriorty(Integer priorty) {
-        this.priorty = priorty;
+    public void setPriority(Integer priority) {
+        this.priority = priority;
     }
 
     public Date getCreateTime() {
@@ -41,12 +41,12 @@ public class Area {
         this.createTime = createTime;
     }
 
-    public Date getLastEditIime() {
-        return lastEditIime;
+    public Date getLastEditTime() {
+        return lastEditTime;
     }
 
-    public void setLastEditIime(Date lastEditIime) {
-        this.lastEditIime = lastEditIime;
+    public void setLastEditTime(Date lastEditTime) {
+        this.lastEditTime = lastEditTime;
     }
 
 }

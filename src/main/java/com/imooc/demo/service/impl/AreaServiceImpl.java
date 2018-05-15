@@ -33,7 +33,7 @@ public class AreaServiceImpl implements AreaService {
         if(area.getAreaName() != null & !"".equals(area.getAreaName()))
         {
             area.setCreateTime(new Date());
-            area.setLastEditIime(new Date());
+            area.setLastEditTime(new Date());
             try{
                 int effectedNum = areaDao.insertArea(area);
                 if(effectedNum >0)
@@ -55,7 +55,7 @@ public class AreaServiceImpl implements AreaService {
     @Override
     public boolean modifyArea(Area area) {
         if(area.getAreaId() != null && area.getAreaId()>0) {
-            area.setLastEditIime(new Date());
+            area.setLastEditTime(new Date());
             try {
                 int effectedNum = areaDao.updateArea(area);
 
